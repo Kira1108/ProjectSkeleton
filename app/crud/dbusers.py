@@ -1,4 +1,3 @@
-from email.policy import HTTP
 from app.schemas import UserBase
 from app.dbmodels import DbUser
 from app.crud.hash import Hash
