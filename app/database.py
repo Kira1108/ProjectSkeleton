@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from app.config import DATABASE_CONFIG
 import logging
-logger = logging.getLogger("uvicorn")
+logger = logging.getLogger('uvicorn')
 
 sqlalchemy_url_format = "mysql+pymysql://{user}:{password}@{host}:{port}/{db}"
 SQLALCHEMY_DATABASE_URL = sqlalchemy_url_format.format(**DATABASE_CONFIG)
